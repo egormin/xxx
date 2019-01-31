@@ -33,6 +33,7 @@ ansible-playbook jenkins_master/install_jenkins_master.yml -i inventories/invent
 ```
 
 ***How to manage Jenkins service***
+
 Since Jenkins is configured as a service it can be managed with stadard systemctl commands:
 ```
 systemctl stop jenkins
@@ -42,6 +43,7 @@ systemctl restart jenkins
 ```
 
 ***Jenkins update***
+
 To update Jenkins instance to new version:
 ```
 apt-get update
