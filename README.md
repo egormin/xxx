@@ -23,7 +23,7 @@ For initial logon please use username and password, configured in [file](https:/
 
 The version of Jenkins can be configured in [file](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master/roles/jenkins_master/vars/main.yml?at=refs%2Fheads%2Fwip_develop)
 
-Currently configured for installation version: ***2.162***
+Currently configured version for installation : ***2.162***
 
 ***To run playbook:***
 ```
