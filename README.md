@@ -5,7 +5,7 @@ This role intended to automated installation of Jenkins master server.
 ***OS tested and supported:***
 
 
-| ***Jenkins Ver. ***|
+| ***Jenkins Ver.***|
 |---|
 | ***2.162***  | 
 
