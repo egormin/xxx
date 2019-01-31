@@ -42,11 +42,17 @@ systemctl start jenkins
 systemctl restart jenkins
 ```
 
-***Jenkins update***
+***Update Jenkins***
 
 To update Jenkins instance to new version:
 ```
 apt-get update
 apt-get install jenkins
 ```
+or with commands:
+```
+wget http://<some link>.deb
+dpkg -i /path/to/filename.deb
+```
+
 
