@@ -2,6 +2,12 @@
 
 This role intended for automated installation of Jenkins master server.
 
+| ***Jenkins Ver.***|
+|---|
+| ***2.162***  | 
+
+-----------
+
 ***OS tested and supported:***
 
 | OS   | Tested  |
@@ -9,10 +15,8 @@ This role intended for automated installation of Jenkins master server.
 | Ubuntu 18  |  :white_check_mark: |
 | Ubuntu 16  |  :white_check_mark: | 
 
--------------------------
-| ***Jenkins Ver.***|
-|---|
-| ***2.162***  | 
+
+
 
 ***The role includes next steps:***
 
