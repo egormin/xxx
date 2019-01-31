@@ -21,7 +21,7 @@ For initial logon please use username and password, configured in [file](https:/
 
 :warning: jenkins user from this file ьгые be removed after personal user creating for security reasons.
 
-The version of Jenkins can be configured in [file] (https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master/roles/jenkins_master/vars/main.yml?at=refs%2Fheads%2Fwip_develop)
+The version of Jenkins can be configured in [file](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master/roles/jenkins_master/vars/main.yml?at=refs%2Fheads%2Fwip_develop)
 
 ***To run playbook:***
 ```
