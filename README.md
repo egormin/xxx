@@ -17,7 +17,7 @@ This role intended to automated installation of Jenkins master server.
 - Plugins installation
 - Port redirection configuring with nginx
 
-For initial logon please use username and password, configured in file.
+For initial logon please use username and password, configured in [file](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master/roles/jenkins_master/defaults/main.yml?at=wip_develop).
 
 :warning: jenkins user from this file should be removed after personal user created for security reasons.
 
