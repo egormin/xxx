@@ -1,6 +1,6 @@
 ### Install Jenkins master
 
-This role intended to automated installation of Jenkins master server.
+This role intended for automated installation of Jenkins master server.
 
 ***OS tested and supported:***
 
@@ -9,6 +9,7 @@ This role intended to automated installation of Jenkins master server.
 | Ubuntu 18  |  :white_check_mark: |
 | Ubuntu 16  |  :white_check_mark: | 
 
+-------------------------
 | ***Jenkins Ver.***|
 |---|
 | ***2.162***  | 
