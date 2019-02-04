@@ -28,7 +28,7 @@ node {
 ```
 here `jenkins-build_agent` is the name of base image.
 
-
+___
 Folder [jenkins_master](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master) contains files for Jenkins master installation.
 
 Folder [jenkins_agents](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_agents) contains files for Jenkins agents installation and management.
