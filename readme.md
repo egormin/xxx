@@ -1,6 +1,6 @@
 ### Install Jenkins agent
 
-This role intended for automated installation of Jenkins agent and configure it appropriatly.
+This role intended for automated installation of Jenkins agent and configure it appropriately.
 
 ***OS tested and supported:***
 
