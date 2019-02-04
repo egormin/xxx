@@ -1,37 +1,15 @@
-### Install Jenkins agent
+### Jenkins master and agents automated installation
 
-This role intended for automated installation of Jenkins agent and configure it appropriately.
+Folder [jenkins_master](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_master) contains files for Jenkins master installation.
 
-***OS tested and supported:***
+Folder [jenkins_agents](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_agents) contains files for Jenkins agents installation and management.
 
-| OS   | Tested  |
-|---|---|
-| Ubuntu 18  |  :white_check_mark: |
-| Ubuntu 16  |  :white_check_mark: | 
+Folder [inventories](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/inventories) contains common inventory information.
 
-
-***The role includes next steps:***
-
-- Necessary packages installation to have ability to connect agent to Master node
-- Docker installation
-- Ansible container software installation and initial configuring
-
-Docker is necessary to run builds inside containers.
-
-[Ansible container](https://www.ansible.com/integrations/containers/ansible-container) software is necessary to install additional software and make configurational changes with ansible playbooks.
-
-Ansible container config file is located in [repository](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_agents/container_settings/container.yml) and defines common settings for container.
-
-Ansible role for the docker image configuring placed [here](https://stash.playtika.com/projects/JB/repos/jenkins_automation/browse/jenkins_agents/roles/manage_agent/tasks).
-
-***How to make changes in base image:***
-1. Add changes in ansible role mentioned before.
-2. Run the Jenkins job [build_image](http://accelerator-automation.corp/job/build_image/) to build the image end place it on the agent node.
-
-
-***To run playbook for agent installation:***
-```
-ansible-playbook jenkins_agents/install_agent.yml -i inventories/inventory
-```
-
-
+The provided solution implies the immutable approach for the builds. The jobs are going to be runned inside a container based on the base docker image. For that docker service is installed on the agent. The benefits of this approach:
+- The container runs only during job live time
+- Every job runs own separate container independent from each other
+- Every change performed during that build dischardes when container stops
+- Base image is a singe point for changes and configuration
+- Every build has the same isolated environment 
+- Ability tp make same changes like software installation and configuration inside a container without any fluence on other containers
