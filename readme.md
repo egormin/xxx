@@ -8,6 +8,7 @@ The provided solution implies the immutable approach for the builds. The jobs ar
 - Every build has the same isolated environment 
 - Ability to make same changes like software installation and configuration inside a container without any fluence on other containers
 
+#### Build image approach
 For the docker image build process was applied [ansible contained tool](https://www.ansible.com/integrations/containers/ansible-container) which allows to define the list of software for installation a and necessary configuration with ansible code.
 
 
