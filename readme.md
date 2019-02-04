@@ -1,5 +1,6 @@
 ### Jenkins master and agents automated installation
 
+#### Jobs inside a docker container approach
 The provided solution implies the immutable approach for the builds. The jobs are going to be run inside a container based on the base docker image. For that docker service is installed on the agent. The benefits of this approach:
 - The container runs only during job live time
 - Every job runs own separate container independent from each other
